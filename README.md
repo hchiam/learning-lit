@@ -10,8 +10,6 @@ https://lit.dev/tutorial
 
 https://lit.dev/playground
 
-https://blog.openreplay.com/build-a-lightweight-web-component-with-lit-js
-
 - Native web components, custom tags with `@customElement()`.
 - No virtual tree to diff with the DOM.
 - Works with/without frameworks = shareable and future-ready.
@@ -46,3 +44,14 @@ yarn dev
 ```
 
 To get the demo to work, I also needed to run `yarn add @babel/plugin-proposal-decorators` and add the `.babelrc` file.
+
+## Another tutorial
+
+https://blog.openreplay.com/build-a-lightweight-web-component-with-lit-js
+
+```sh
+git clone https://github.com/lit/lit-element-starter-js.git
+cd lit-element-starter-js
+npm i
+npm run serve
+```
