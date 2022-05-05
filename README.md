@@ -16,6 +16,9 @@ https://lit.dev/playground
 - Scoped styles with `static styles = css`.
 - Reactive properties with `@property()`
 - Native HTML and JS expressions, so no compilation required for templates.
+- `@click=${this.handleClick}` and `@input=${this.changeName}` etc.
+- `?hidden=${this.isHidden}`
+- `.value=${this.value}`
 
 ```sh
 npm i lit
