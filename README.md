@@ -1,45 +1,48 @@
-# Learning template [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/hchiam/learning-template/blob/main/LICENSE)
+# Learning Lit.js [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/hchiam/learning-lit/blob/main/LICENSE)
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
-(To use this template fast with [`gh` CLI](https://github.com/hchiam/learning-gh), you can run [`gh repo create --template learning-template learning-...`](https://cli.github.com/manual/gh_repo_create) or [set up a custom shortcut CLI command](https://github.com/hchiam/learning-bash-scripts/blob/main/gh-cli-create-learning-repo-from-template.sh).)
+https://lit.dev
 
-(To create a convenience script repo, use this template instead: https://github.com/hchiam/convenience)
+https://lit.dev/docs/getting-started
 
-(To create a website fast, use a code generator like [`create-next-app`](https://github.com/hchiam/learning-nextjs), [`sapper`](https://github.com/hchiam/learning-sapper), a [svelte template](https://github.com/sveltejs/template), [`yo`](https://yeoman.io/generators), or my [project-template](https://github.com/hchiam/project-template))
+https://lit.dev/tutorial
 
-<!-- Add reference link(s) here -->
+https://lit.dev/playground
 
-## From scratch
+https://blog.openreplay.com/build-a-lightweight-web-component-with-lit-js
 
-Using [`yarn`](https://github.com/hchiam/learning-yarn):
+- Native web components, custom tags with `@customElement()`.
+- No virtual tree to diff with the DOM.
+- Works with/without frameworks = shareable and future-ready.
+- Scoped styles with `static styles = css`.
+- Reactive properties with `@property()`
+- Native HTML and JS expressions, so no compilation required for templates.
 
-```bash
-yarn add
+```sh
+npm i lit
 ```
 
-Or with `npm`:
+or with [`yarn`](https://github.com/hchiam/learning-yarn):
 
-```bash
-npm install
+```sh
+yarn add lit
 ```
 
-And then:
+Then to quickly serve the example, install [`parcel`](https://github.com/hchiam/learning-parcel) globally (so not specifically for this project):
 
-```bash
-
+```sh
+npm install -g parcel-bundler
+# or:
+yarn global add parcel
 ```
 
-## Starting by testing out this repo <!-- Replace "template"s and "# and then ..."s in this section -->
+Then to run the demo example in this GitHub repo:
 
-Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
-
-```bash
-git clone https://github.com/hchiam/learning-template.git && cd learning-template && yarn; # and then ...
+```sh
+npm run start
+# or just:
+yarn dev
 ```
 
-Or with `npm`: (triple-click to select all)
-
-```bash
-git clone https://github.com/hchiam/learning-template.git && cd learning-template && npm install; # and then ...
-```
+To get the demo to work, I also needed to run `yarn add @babel/plugin-proposal-decorators` and add the `.babelrc` file.
